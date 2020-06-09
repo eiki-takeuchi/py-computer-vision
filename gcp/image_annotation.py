@@ -107,7 +107,7 @@ if __name__ == "__main__":
     """
     parser = argparse.ArgumentParser(description=description)
     parser.add_argument("--image-uri", type=str, help="Put image URI.")
-    parser.add_argument("--top-confidence", type=int, help="Number of top confidence data to display.")
+    parser.add_argument("--top-confidence", type=int, default=1, help="Number of top confidence data to display.")
     parser.add_argument("--graph", action="store_const", const=True, help="Display barplot.")
 
     # Set parameters.
