@@ -14,8 +14,14 @@ Some reasons you might want to use REST framework:
 
 # Usage
 
+Run server.
 ```
 $ ./manage.py migrate
 $ ./manage.py createsuperuser
 $ ./manage runserver
+```
+
+Ex) Send GET Request.
+```
+$ curl 'http://localhost:8000/users/vision_api/?format=json&url=https%3A%2F%2Fwww.sciencemag.org%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Farticle_main_large%2Fpublic%2Fdogs_1280p_0.jpg'
 ```
