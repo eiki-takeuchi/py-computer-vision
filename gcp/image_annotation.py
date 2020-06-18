@@ -30,7 +30,7 @@ def annotate_image(vision_client, image_uri, log=False):
         3. HTTP uri. 
     """
 
-    response = client.annotate_image({
+    response = vision_client.annotate_image({
       'image': {
           'source': {
               'image_uri': image_uri
